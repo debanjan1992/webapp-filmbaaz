@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <base href="/">
     <meta charset="utf-8" />
     <title>Filmbaaz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,8 +21,29 @@
     <script type="text/javascript" src="./src/app/app.js"></script>
     <script type="text/javascript" src="./src/app/app-config.js"></script>
     <script type="text/javascript" src="./src/app/controllers/index/indexController.js"></script>
+    <script type="text/javascript" src="./src/app/directives/navbar/navbar.dir.js"></script>
+    <script type="text/javascript" src="./src/app/directives/navbar/navbarController.js"></script>
+
 </head>
+
 <body ng-app="filmbaaz" ng-controller="indexController as vm">
-    {{vm.applicationName}}
+    <navbar></navbar>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+            <div class="col">
+                One of three columns
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
