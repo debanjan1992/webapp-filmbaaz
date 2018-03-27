@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head ng-app="filmbaaz" ng-controller="landingPageController">
+<html lang="en">
+<head>
     <meta charset="utf-8" />
     <title>Filmbaaz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Loading Bootstrap CSS files -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Loading Bootstrap JS files and their dependencies -->
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+
+    <!-- Loading app specific js -->
+    <script type="text/javascript" src="./src/app/app.js"></script>
+    <script type="text/javascript" src="./src/app/app-config.js"></script>
+    <script type="text/javascript" src="./src/app/controllers/index/indexController.js"></script>
 </head>
-<body>
-    
+<body ng-app="filmbaaz" ng-controller="indexController as vm">
+    {{vm.applicationName}}
 </body>
 </html>
