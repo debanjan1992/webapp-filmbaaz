@@ -1,0 +1,32 @@
+<navbar></navbar>
+<br>
+<div class="container card bg-light mb-3" style="max-width: 23rem;">
+    <div class="card-title text-center">
+        <a class="navbar-brand" href="/">
+            <img src="../src/assets/img/logo.png" width="150" alt="">
+        </a>
+        <p>Sign In</p>
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" ng-model="join.name" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" ng-model="join.email" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" ng-model="join.password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" ng-model="join.confirmPassword" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
