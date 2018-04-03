@@ -6,7 +6,9 @@ app.controller('loginController', ['$scope', 'userService', '$state', function($
         user.password = vm.password;
         userService.authenticateUser(user, function(result){
             if(result !=null)
-                $state.go('welcome');
+                $state.go('welcome', {
+                    username: result.name
+                });
             else
                 alert("Invalid Credentials");
         });
