@@ -3,7 +3,9 @@ app.config(['$stateProvider', '$locationProvider', function($stateProvider, $loc
     $locationProvider.hashPrefix('');
     $stateProvider.state('home', {
         url: '',
-        template: '<navbar></navbar><h1>You are at home page</h1>'
+        templateUrl: '../src/app/controllers/home/home.tpl.html',
+        controller: 'homeController',
+        controllerAs: 'home'
     }).state('login', {
         url: '/login',
         templateUrl: '../src/app/controllers/login/login.tpl.html',
